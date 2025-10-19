@@ -1,0 +1,30 @@
+{
+  "name": "nodemail-server",
+  "version": "1.0.0",
+  "description": "nodemail server for portfolio",
+  "homepage": "https://github.com/MikaTech-dev/nodemail-server#readme",
+  "bugs": {
+    "url": "https://github.com/MikaTech-dev/nodemail-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikaTech-dev/nodemail-server.git"
+  },
+  "license": "MIT",
+  "author": "K3n",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.9",
+    "nodemon": "^3.1.10"
+  }
+}
