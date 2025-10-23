@@ -4,7 +4,7 @@ require ("dotenv").config()
 const express = require ("express")
 const morgan = require("morgan")
 // const cors = require ("cors")
-const { isAlive } = require("./src/routes/server-status/alive.controller")
+const { isAlive } = require("./src/routes/server-status/alive.handlers")
 
 const app = express()
 // Morgan config
