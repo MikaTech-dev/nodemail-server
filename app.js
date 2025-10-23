@@ -3,7 +3,7 @@ require ("dotenv").config()
 // Essential imports
 const express = require ("express")
 const morgan = require("morgan")
-const cors = require ("cors")
+// const cors = require ("cors")
 const { isAlive } = require("./src/routes/server-status/alive.controller")
 
 const app = express()
@@ -12,11 +12,11 @@ app.use(morgan("dev"))
 
 // Cors
 
-if (process.env.NODE_ENV == "production"){
-    app.use(cors({
-        origin: "http"
-    }))
-}
+// if (process.env.NODE_ENV == "production"){
+//     app.use(cors({
+//         origin: "http"
+//     }))
+// }
 
 // Server config and startup
 const PORT = process.env.NODE_PORT || 5000
