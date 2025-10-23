@@ -29,8 +29,8 @@ app.listen (PORT, ()=> {
     }
 })
 
-// app.get("/", (req, res)=> {
-//     res.json("Server alive")
-// })
+app.get("/", (req, res)=> {
+    res.json("Server alive")
+})
 
 app.use ("/api", isAlive)
